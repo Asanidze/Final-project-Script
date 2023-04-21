@@ -11,6 +11,9 @@
     <link rel="stylesheet" href="styles/responsive.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
     
+    <link rel="stylesheet" href="splide.min.css">
+    <script src="splide.min.js"></script>
+
 </head>
 <body>
 
@@ -126,7 +129,18 @@
                 <h4 class="selling">Easy and Fast</h4>
                 <h2 class="destination-1">Top Suggestion</h2>
             </div>
-            <img src="images/barcelona.jpg" alt="barcelona">
+            <div class="splide" role="group" aria-label="Splide Basic HTML Example">
+                <div class="splide__track">
+                  <ul class="splide__list">
+                    <li class="splide__slide"><img class="img-barc" src="images/campnou.jpg" alt=""></li>
+                    <li class="splide__slide"><img class="img-barc" src="images/sagradaf.jpg" alt=""></li>
+                    <li class="splide__slide"><img class="img-barc" src="images/barcelona.jpg" alt=""></li>
+                    <li class="splide__slide"><img class="img-barc" src="images/guell.jpg" alt=""></li>
+                    <li class="splide__slide"><img class="img-barc" src="images/gaudi.jpg" alt=""></li>
+                    <li class="splide__slide"><img class="img-barc" src="images/cassa.jpg" alt=""></li>
+                  </ul>
+                </div>
+            </div>
             <h2 class="barcelona">BARCELONA</h2>
             <div class="accordion-div">
                 <div class="accordion-div-1">
@@ -179,6 +193,16 @@
         </div>
     </section>
 
+
+    <section>
+        <div class="section-4">
+            <h4 class="selling">Easy and Fast</h4>
+            <h2 class="destination-1">Top Customers</h2>
+            <div id="get-elements">
+                
+            </div>
+        </div>
+    </section>
 
     <script src="js/script.js"></script>
 </body>
