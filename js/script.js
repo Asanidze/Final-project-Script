@@ -97,3 +97,150 @@ var splide = new Splide( '.splide', {
     perMove: 1,
 } );
 splide.mount();
+
+
+// registration
+
+let formELement = document.getElementById("registration-form");
+
+formELement.addEventListener("submit", function (event) {
+  event.preventDefault();
+  let errors = {};
+  let form = event.target;
+
+    let password1 = document.getElementById("password-field1").value;
+    let password2 = document.getElementById("password-field2").value;
+
+    if (password1 == ""){
+        errors.password = "Password can't be empty";
+    }
+
+    if (password1 != password2){
+        errors.password2 = "Passwords not match";
+    }
+
+
+
+    let gender = false;
+
+    document.querySelectorAll('[name = "gender"]').forEach((item) => {
+        if (item.checked) {
+          gender = true;
+        }
+    });
+    
+    if (!gender) {
+        errors.age = "please select your gender";
+    };
+
+
+
+    let agreeTerms =  document.getElementById("agree").checked;
+
+    if (!agreeTerms) {
+    errors.agree = "You must egre our terms and conditions";
+    }
+
+
+    document.querySelectorAll(".error-text").forEach((element) => {
+        element.innerHTML = "";
+      });
+    
+      for (let item in errors) {
+        let errorText = document.getElementById("error-" + item);
+    
+        if (errorText) {
+          errorText.innerText = errors[item];
+        }
+      }
+    
+      if (Object.keys(errors).length == 0) {
+        form.submit();
+      }
+});
+
+
+
+let passwordField = document.getElementById("password-field1");
+let toggleIcon = document.getElementById("toggleIcon");
+
+toggleIcon.addEventListener("click", function(){
+    if (passwordField.type == "password"){
+        passwordField.setAttribute("type","text");
+        toggleIcon.classList.remove("fa-eye");
+        toggleIcon.classList.add("fa-eye-slash");
+    }
+    else {
+        passwordField.setAttribute("type","password");
+        toggleIcon.classList.remove("fa-eye-slash");
+        toggleIcon.classList.add("fa-eye");
+    }
+})
+
+
+
+
+let emailField = document.getElementById("emailField");
+
+emailField.addEventListener("keyup", function(){
+    let emailFieldValue = document.getElementById("emailField").value;
+    let perrortext = document.getElementById("error-email");
+    let emailPattern =
+    /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+
+    if (emailFieldValue.match(emailPattern)){
+        emailField.style.border = "2px solid green";
+    }
+    else {
+        emailField.style.border = "2px solid red";
+    }
+
+    if (emailFieldValue == "") {
+        perrortext.innerHTML = "";
+        emailField.style.border = "2px solid black";
+    }
+})
+
+
+let firstName= document.getElementById("name-field");
+
+firstName.addEventListener("keyup", function(){
+    let firstNameValue=firstName.value.trim(); 
+    let errorTextN = document.getElementById("error-name");
+    let validFirstName=/^[A-Za-z]+$/;
+
+    if(firstNameValue == ""){
+        errorTextN.innerHTML="Name is required";
+    }
+    else if(!validFirstName.test(firstNameValue)){
+        errorTextN.innerHTML="First Name must be only string without white spaces";
+    }
+    else{
+        errorTextN.innerHTML="";
+        firstName.style.border = "2px solid green";
+        return true;
+    }
+})
+
+
+
+
+let username = document.getElementById("username-field");
+
+username.addEventListener("keyup", function(){
+    let usernameValue = document.getElementById("username-field").value;
+    let errorText = document.getElementById("error-username");
+    let usernamePattern = /^[A-Za-z .]{3,15}$/;
+
+    if (usernamePattern.test(usernameValue)){
+        username.style.border = "2px solid green";
+    }
+    else {
+        username.style.border = "2px solid red";
+    }
+
+    if (usernameValue == ""){
+        errorText.innerHTML = "Username is required";
+        username.style.border = "2px solid black";
+    }
+})
