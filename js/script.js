@@ -67,9 +67,6 @@ function getUsers(){
             pComment.textContent = "'On the Windows talking painted pasture yet its express parties use. Sure last upon he same as knew next. Of believed or diverted no.'";
             pComment.classList.add("pComment");
 
-            // li.textContent = `${element.first_name}`;
-
-            // li.appendChild(p)
             li.appendChild(img);
             li.appendChild(pName);
             li.appendChild(p)
@@ -244,3 +241,8 @@ username.addEventListener("keyup", function(){
         username.style.border = "2px solid black";
     }
 })
+
+
+
+// filter
+

@@ -420,3 +420,108 @@ body {
 
     color: red;
 }
+.line {
+    width: 100%;
+    background-color: #ffffff;
+    height: 2px;
+    margin-top: 150px;
+}
+.footer {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.footer-div {
+    font-size: 44px;
+    color: #181E4B;
+    width: 207px;
+}
+.book {
+    font-size: 13px;
+    color: #5E6282;
+}
+.company-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 18px;
+    color: #5E6282;
+    height: 130px;
+}
+.company {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 18px;
+    color: #5E6282;
+    height: 100px;
+}
+.company-main {
+    font-size: 22px;
+    color: #080809;
+}
+.supports {
+    width: 260px;
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;    
+}
+.icons {
+    display: flex;
+    justify-content: space-between;
+    width: 214px;
+}
+.icon-fb {
+    width: 41px;
+    height: 41px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.discover-app {
+    font-size: 20px;
+    color: #5E6282;
+    margin: 0 auto;
+}
+.apps {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+.google {
+    width: 100px;
+    height: 60px;
+    border-radius: 17.5px;
+    background-color: #080809;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #ffffff;
+}
+.google-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 12px;
+    height: 35px;
+}
+.fa-google-play {
+    font-size: 20px;
+    color: rgb(173, 84, 84);
+    padding: 5px;
+}
+.fa-apple {
+    font-size: 20px;
+    padding: 5px;
+}
+.hide {
+    display: none;
+}
