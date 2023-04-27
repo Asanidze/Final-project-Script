@@ -246,3 +246,65 @@ username.addEventListener("keyup", function(){
 
 // filter
 
+
+let inputFilter = document.getElementById("filter");
+let ulResult = document.getElementById("result");
+let clearList = [];
+    
+function getFilter(){
+    fetch("https://reqres.in/api/users?page=2", {
+        method:"GET",
+    })
+    .then(function(response) {
+        if (response.status != 200){
+            throw response.status;
+        }
+        return response.json();
+    })
+    .then(function(getElements) {
+        getElements.data.forEach((element) => {
+            let li = document.createElement("li");
+            li.textContent = `${element.email}`;
+            li.style.color = '#5E6282';
+
+            clearList.push(li);
+            ulResult.appendChild(li);
+        })
+    })
+    .catch((error) => error);
+}
+
+getFilter();
+
+function filterData(searchItem) {
+    clearList.forEach( (item) => {
+    if (item.innerText.toLowerCase().includes(searchItem.toLowerCase()) ) {
+        item.classList.remove('hide')
+    } 
+    else {
+        item.classList.add('hide')
+    }
+    })
+};
+      
+inputFilter.addEventListener('keyup', function(event) {
+    filterData(event.target.value);
+})
+
+
+
+
+//cookies
+const cookieContainer = document.querySelector(".cookie-container");
+const cookieButton = document.querySelector(".cookie-btn");
+
+cookieButton.addEventListener("click", () => {
+  cookieContainer.classList.remove("active");
+  localStorage.setItem("cookieBannerDisplayed", "true");
+});
+
+setTimeout(() => {
+  if (!localStorage.getItem("cookieBannerDisplayed")) {
+    cookieContainer.classList.add("active");
+  }
+}, 300);
