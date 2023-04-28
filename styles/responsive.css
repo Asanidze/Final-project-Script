@@ -68,6 +68,20 @@
         margin-bottom: 35px;
     }
 }
+
+@media (max-width: 950px){
+    .wrapper-1 {
+        width: 60%;
+        margin: 0 auto;
+    }
+    .wrapper-1:nth-child(2){
+        margin-top: 10px;
+    }
+    .wrapper-1:nth-child(1){
+        margin-top: 40px;
+    }
+}
+
 @media (max-width: 890px) {
     .navigation {
         display: none;
@@ -81,6 +95,9 @@
         height: 400px;
         align-items: center;
         justify-content: space-between;
+        border: 2px solid rgb(116, 116, 189);
+        border-radius: 10px;
+        padding: 5px;
     }
     .navigation.activeNav {
         display: block;
@@ -91,14 +108,137 @@
         background-image: url(../images/airplane.jpg);
         background-repeat: no-repeat;
         background-position: bottom;
-
-        /* background-color: rgb(8, 79, 107); */
         height: 100rem;
-    }
-    .li-link:nth-child(1) {
-        margin-left: 80px;
     }
     .a-tag {
         color: rgb(10, 88, 255);
+    }
+}
+@media (max-width: 800px) {
+    .wrapper {
+        width: 90%;
+    }
+    .li {
+        width: 40%;
+    }
+    .paragraph {
+        width: 100%;
+    }
+    .traveller-girl {
+        width: 100%;
+    }
+}
+@media (max-width: 705px){
+    .name-username {
+        flex-direction: column;
+        align-items: center;
+        height: 65px;
+    }
+    .username-div,
+    .name-div {
+        display: flex;
+        align-items: center;
+    }
+    .wrapper-1 {
+        width: 80%;
+    }
+    .new-info {
+        margin-right: 40px;
+    }
+}
+
+@media (max-width: 530px){
+    .section-5 {
+        height: 700px;
+    }
+    .new-info {
+        font-size: 20px;
+    }
+    .name-username {
+        margin-top: 20px;
+        height: 80px;
+    }
+}
+
+@media (max-width: 520px){
+    .travel-enjoy {
+        font-size: 45px;
+    }
+    .destination {
+        font-size: 15px;
+    }
+    .wrapper-1,
+    .accordion-div {
+        width: 100%;
+    }
+    .accordion {
+        width: 320px;
+    }
+    .li {
+        width: 70%;
+        margin: 0 auto;
+    }
+    .footer-div-1 {
+        flex-direction: column;
+        height: 550px;
+        width: 45%;
+    }
+    .new-info {
+        margin-right: 20px;
+    }
+}
+
+@media (max-width:420px){
+    .registration {
+        width: 90%;
+    }
+    .wrapper-1 {
+        width: 100%;
+    }
+    .wrap-1 {
+        width: 100%;
+    }
+    .plane {
+        width: 20%;
+    }
+    .new-info {
+        margin-right: 5px;
+    }
+}
+
+@media (max-width: 380px) {
+    .accordion {
+        width: 250px;
+    }
+    .wrap {
+        width: 100%;
+    }
+    .wrapper {
+        width: 100%;
+    }
+    .ul {
+        width: 35%;
+        padding: 20px;
+        margin-right: 20px;
+    }
+    .navigation.activeNav {
+        width: 90%;
+    }
+}
+@media (max-width: 354px) {
+    .gender-div {
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media (max-width: 335px) {
+    .ul {
+        padding: 18px;
+        margin-right: 5px;
+    }
+}
+@media (max-width: 328px) {
+    .registration {
+        width: 95%;
     }
 }

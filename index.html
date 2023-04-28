@@ -6,6 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jadoo</title>
 
+
+    <meta property="og:url"                content="" />
+    <meta property="og:type"               content="Airline" />
+    <meta property="og:title"              content="Airline Website" />
+    <meta property="og:description"        content="Flights" />
+    <meta property="og:image"              content="https://media.istockphoto.com/id/1137971264/vector/airplane-fly-out-logo-plane-taking-off-stylized-sign.jpg?s=612x612&w=0&k=20&c=TH1vDs4wmGnfWapq_e1XYxqzQV_qxaF4_aJWoDJyKNI=" />
+
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/responsive.css">
@@ -212,12 +219,12 @@
             <div class="registration">
                 <form class="registration-form" action="" id="registration-form" method="post">
                     <div class="name-username">
-                        <div>
+                        <div class="name-div">
                         <input class="input" type="text" name="name" placeholder="Name" id="name-field" />
                         <p class="error-text" id="error-name"></p>
                         </div>
 
-                        <div>
+                        <div class="username-div">
                         <input class="input" type="text" name="username" placeholder="Username" id="username-field" />
                         <p class="error-text" id="error-username"></p>
                         </div>
@@ -239,7 +246,7 @@
                     <p class="error-text" id="error-password2"></p>
                     </div>
                     
-                    <div>
+                    <div class="gender-div">
                     <input class="input" type="radio" name="gender" id="gender1" />
                     <label for="gender1">Male</label>
                     <input class="input" type="radio" name="gender" id="gender2" />

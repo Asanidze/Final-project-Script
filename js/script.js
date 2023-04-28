@@ -258,7 +258,6 @@ username.addEventListener("keyup", function(){
 
 // filter
 
-
 let inputFilter = document.getElementById("filter");
 let ulResult = document.getElementById("result");
 let clearList = [];
@@ -307,6 +306,7 @@ inputFilter.addEventListener('keyup', function(event) {
 
 
 //cookies
+
 const cookieContainer = document.querySelector(".cookie-container");
 const cookieButton = document.querySelector(".cookie-btn");
 
@@ -321,7 +321,9 @@ setTimeout(() => {
   }
 }, 300);
 
-//burgerr
+
+//burgerbar
+
 let burgerbar = document.getElementById("burgerBar");
 let navigation = document.getElementById("navBar");
 let headeract = document.querySelector(".header")
