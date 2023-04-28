@@ -276,7 +276,7 @@ function getFilter(){
         getElements.data.forEach((element) => {
             let li = document.createElement("li");
             li.textContent = `${element.email}`;
-            li.style.color = '#5E6282';
+            li.style.color = '#000000';
 
             clearList.push(li);
             ulResult.appendChild(li);

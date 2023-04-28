@@ -3,15 +3,20 @@
         width: 80%;
     }
 }
+@media (max-width: 1533px) {
+    .li {
+        width: 30%;
+    }
+    .li:nth-child(4),
+    .li:nth-child(5),
+    .li:nth-child(6) {
+        margin-top: 10px;
+    }
+}
 @media (max-width: 1512px) {
     .wrapper-1:nth-child(3) {
         margin: 0 auto;
         margin-top: 10px;
-    }
-}
-@media (max-width: 1498px) {
-    .li {
-        width: 30%;
     }
 }
 @media (max-width: 1456px) {
@@ -41,7 +46,6 @@
 @media (max-width: 1072px) {
     .header-section {
         flex-direction: column;
-        /* align-items: center; */
     }
     .traveller-girl {
         width: 70%;
@@ -121,11 +125,15 @@
     .li {
         width: 40%;
     }
+    .li:nth-child(3){
+        margin-top: 10px;
+    }
     .paragraph {
         width: 100%;
     }
     .traveller-girl {
         width: 100%;
+        margin-top: 50px;
     }
 }
 @media (max-width: 705px){
@@ -145,18 +153,29 @@
     .new-info {
         margin-right: 40px;
     }
+    .section-5 {
+        width: 90%;
+    }
+}
+
+@media (max-width: 538px){
+    .destination-1,
+    .offer {
+        font-size: 40px;
+    }
 }
 
 @media (max-width: 530px){
     .section-5 {
         height: 700px;
     }
-    .new-info {
-        font-size: 20px;
-    }
     .name-username {
         margin-top: 20px;
         height: 80px;
+    }
+    .new-info {
+        font-size: 20px;
+        margin-top: 10px;
     }
 }
 
@@ -178,6 +197,9 @@
         width: 70%;
         margin: 0 auto;
     }
+    .li:nth-child(2){
+        margin-top: 10px;
+    }
     .footer-div-1 {
         flex-direction: column;
         height: 550px;
@@ -186,14 +208,25 @@
     .new-info {
         margin-right: 20px;
     }
+    .footer-div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 434px){
+    .offer {
+        font-size: 35px;
+    }
 }
 
 @media (max-width:420px){
-    .registration {
-        width: 90%;
+    .section-5 {
+        width: 100%;
     }
     .wrapper-1 {
-        width: 100%;
+        width: 80%;
     }
     .wrap-1 {
         width: 100%;
@@ -206,6 +239,12 @@
     }
 }
 
+@media (max-width: 382px){
+    .offer {
+        font-size: 27px;
+    }
+}
+
 @media (max-width: 380px) {
     .accordion {
         width: 250px;
@@ -215,6 +254,9 @@
     }
     .wrapper {
         width: 100%;
+    }
+    .wrapper-1 {
+        width: 90%;
     }
     .ul {
         width: 35%;
