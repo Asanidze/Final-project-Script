@@ -441,6 +441,11 @@ body {
     color: #181E4B;
     width: 207px;
 }
+.footer-div-1 {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+}
 .book {
     font-size: 13px;
     color: #5E6282;
@@ -540,7 +545,9 @@ body {
     color: #ffffff;
     font-size: 13px;
 }
-
+.remember-me {
+    display: flex;
+}
 /* cookies */
   
 .cookie-container {

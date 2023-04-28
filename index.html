@@ -22,7 +22,7 @@
             <div class="logo">
                 <a href="#header"><img src="images/Logo.svg" alt="logo"></a>
             </div>
-            <nav>
+            <nav class="navigation" id="navBar">
                 <ul class="ul">
                     <li><a class="a-tag li-link1" href="#category">Category</a></li>
                     <li><a class="a-tag li-link" href="#destination">Destinations</a></li>
@@ -46,7 +46,7 @@
                 <button class="find-out"><a class="find-out-1" href="#category">Find out more</a></button>
             </div>
             <div class="images">
-                <img src="images/Traveller.svg" alt="traveller">
+                <img class="traveller-girl" src="images/Traveller.svg" alt="traveller">
                 <img class="plane" src="images/plane.svg" alt="plane">
             </div>
         </div>        
@@ -223,6 +223,11 @@
                         </div>
                     </div>
 
+                    <div>
+                        <input class="input" required type="email" id="emailField" placeholder="Email" name="myemail">
+                        <p id="error-email"></p>
+                    </div>
+
                     <div class="password-div">
                     <input class="input" type="password" name="password" placeholder="Password" id="password-field1"/>
                     <i id="toggleIcon" class="fa-solid fa-eye"></i>
@@ -232,11 +237,6 @@
                     <div>
                     <input class="input" type="password" name="password2" placeholder="Repeat Password" id="password-field2" />
                     <p class="error-text" id="error-password2"></p>
-                    </div>
-
-                    <div>
-                    <input class="input" type="email" id="emailField" placeholder="Email" name="myemail">
-                    <p id="error-email"></p>
                     </div>
                     
                     <div>
@@ -254,6 +254,11 @@
                     <label for="agree">I agree terms and conditions</label>
                     <p class="error-text" id="error-agree"></p>
                     </div>
+
+                    <div class="remember-me">
+                        <input type="checkbox" id="save">
+                        <p>Remember me</p>
+                    </div>
                     
                     <button class="sign-up" type="submit">Sign up</button>
                 </form>
@@ -268,30 +273,32 @@
                 <h2>Jadoo</h2>
                 <p class="book">Book your trip in minute, get full Control for much longer.</p>
             </div>
-            <div class="company-1">
-                <h2 class="company-main">Company</h2>
-                <p>aXon</p>
-                <p>Jetstar</p>
-                <p>Expedia</p>
-                <p>Qantas</p>
-                <p>Alitalia</p>
-            </div>
-            <div class="company">
-                <h2 class="company-main">Help</h2>
-                <p>Help/FAQ</p>
-                <p>Press</p>
-                <p>Affilates</p>
-            </div>
-            <div>
-                <h2 class="company-main">Contact</h2>
-                <input type="text" id="filter" placeholder="email...">
-                <ul id="result" class="user-list"></ul>
-            </div>
-            <div class="company">
-                <h2 class="company-main">More</h2>
-                <p>Airlinefees</p>
-                <p>Airline</p>
-                <p>Low fare tips</p>
+            <div class="footer-div-1">
+                <div class="company-1">
+                    <h2 class="company-main">Company</h2>
+                    <p>aXon</p>
+                    <p>Jetstar</p>
+                    <p>Expedia</p>
+                    <p>Qantas</p>
+                    <p>Alitalia</p>
+                </div>
+                <div class="company">
+                    <h2 class="company-main">Help</h2>
+                    <p>Help/FAQ</p>
+                    <p>Press</p>
+                    <p>Affilates</p>
+                </div>
+                <div>
+                    <h2 class="company-main">Contact</h2>
+                    <input type="text" id="filter" placeholder="email...">
+                    <ul id="result" class="user-list"></ul>
+                </div>
+                <div class="company">
+                    <h2 class="company-main">More</h2>
+                    <p>Airlinefees</p>
+                    <p>Airline</p>
+                    <p>Low fare tips</p>
+                </div>
             </div>
             <div class="supports">
                 <div class="icons">
@@ -328,10 +335,14 @@
         </p>
   
         <button class="cookie-btn">
-          Okay
+          Accept
         </button>
     </div>
 
+
+    <script src="
+    https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js
+    "></script>   
     <script src="js/script.js"></script>
 </body>
 </html>

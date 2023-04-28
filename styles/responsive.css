@@ -1,0 +1,104 @@
+@media (max-width: 1580px) {
+    .accordion-div {
+        width: 80%;
+    }
+}
+@media (max-width: 1512px) {
+    .wrapper-1:nth-child(3) {
+        margin: 0 auto;
+        margin-top: 10px;
+    }
+}
+@media (max-width: 1498px) {
+    .li {
+        width: 30%;
+    }
+}
+@media (max-width: 1456px) {
+    .registration-img {
+        display: none;
+    }
+    .registration {
+        justify-content: center;
+    }
+}
+@media (max-width: 1380px) {
+    .accordion-div {
+        width: 100%;
+    }
+    .new-info {
+        width: 60%;
+    }
+}
+@media (max-width: 1140px) {
+    .footer {
+        width: 100%;
+    }
+    .accordion-div {
+        flex-direction: column;
+    }
+}
+@media (max-width: 1072px) {
+    .header-section {
+        flex-direction: column;
+        /* align-items: center; */
+    }
+    .traveller-girl {
+        width: 70%;
+    }
+}
+@media (max-width: 1024px) {
+    .wrapper-1 {
+        width: 45%;
+    }
+    .footer {
+        flex-direction: column;
+        align-items: center;
+    }
+    .wrapper {
+        width: 55%;
+        margin: 0 auto;
+    }
+    .wrapper:nth-child(2){
+        margin-top: 20px;
+    }
+    .footer-div-1 {
+        width: 90%;
+        margin-top: 35px;
+        margin-bottom: 35px;
+    }
+}
+@media (max-width: 890px) {
+    .navigation {
+        display: none;
+    }
+    .burger-bar {
+        display: block;
+    }
+    .ul {
+        width: 60%;
+        flex-direction: column;
+        height: 400px;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .navigation.activeNav {
+        display: block;
+        padding-top: 100px;
+        width: 100%;
+    }
+    .header.activeNav {
+        background-image: url(../images/airplane.jpg);
+        background-repeat: no-repeat;
+        background-position: bottom;
+
+        /* background-color: rgb(8, 79, 107); */
+        height: 100rem;
+    }
+    .li-link:nth-child(1) {
+        margin-left: 80px;
+    }
+    .a-tag {
+        color: rgb(10, 88, 255);
+    }
+}

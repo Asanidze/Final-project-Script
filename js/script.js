@@ -102,6 +102,18 @@ let formELement = document.getElementById("registration-form");
 
 formELement.addEventListener("submit", function (event) {
   event.preventDefault();
+
+  let checkbox = document.getElementById("save");
+
+    if (checkbox.checked) {
+      let nameValue = document.getElementById("name-field").value;
+      Cookies.set('NameValue', nameValue);
+    } 
+    else {
+      Cookies.remove('NameValue');
+    }
+
+
   let errors = {};
   let form = event.target;
 
@@ -150,8 +162,8 @@ formELement.addEventListener("submit", function (event) {
           errorText.innerText = errors[item];
         }
       }
-    
-      if (Object.keys(errors).length == 0) {
+      
+     if (Object.keys(errors).length == 0) {
         form.submit();
       }
 });
@@ -308,3 +320,13 @@ setTimeout(() => {
     cookieContainer.classList.add("active");
   }
 }, 300);
+
+//burgerr
+let burgerbar = document.getElementById("burgerBar");
+let navigation = document.getElementById("navBar");
+let headeract = document.querySelector(".header")
+
+burgerbar.addEventListener("click", function(){
+    navigation.classList.toggle("activeNav");
+    header.classList.toggle("activeNav")
+})
