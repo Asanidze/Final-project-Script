@@ -332,3 +332,10 @@ burgerbar.addEventListener("click", function(){
     navigation.classList.toggle("activeNav");
     header.classList.toggle("activeNav")
 })
+
+let ulClass = document.querySelectorAll(".direction");
+
+ulClass.forEach((element) => element.addEventListener("click",function(){
+    navigation.classList.remove("activeNav");
+    header.classList.remove("activeNav")
+}))
