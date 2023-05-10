@@ -1,3 +1,5 @@
+"use strict";
+
 // hide header
 
 const header = document.querySelector(".header");
