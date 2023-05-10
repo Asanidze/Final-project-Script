@@ -160,8 +160,10 @@ body {
     height: 60px;
     border-radius: 10px;
     cursor: pointer;
-    border: none;
     margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .find-out-1 {
     color: #ffffff;
